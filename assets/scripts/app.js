@@ -1,6 +1,7 @@
 "use-strict";
 
 const defaultResult = 0;
+const apiDelay = 200; //ms
 let currentResult = defaultResult;
 let mineID = 0;
 let mineScanRange = 0;
@@ -282,7 +283,7 @@ async function apiCallNew (urlApi){
 
 //call API  
 async function apiCall (urlApi){
-  await sleep(500);
+  await sleep(apiDelay);
   try{
         const response = await fetch(urlApi, {
           Accept: 'application/json',
