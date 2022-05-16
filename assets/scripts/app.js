@@ -164,7 +164,12 @@ async function areCrabsInGame(minerAddress) {
       //current page
       const currentPage = stuff.result.page;
       const totalRecord = stuff.result.totalRecord;
-      //const remainder = totalRecord % 3;
+      const remainder = totalRecord % 3;
+
+      //check if crab isnt a multiple of 3, 
+      if(remainder !== 0){
+        return crabsInGame = true;
+      }
 
       //handle single in-game page
       if(totalPages === currentPage){
