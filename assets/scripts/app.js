@@ -176,7 +176,7 @@ async function areCrabsInGame(minerAddress) {
         //we need to limit to the index that can be processed
         for(let i=0; i < totalRecord; i++){
           const teamID = stuff.result.data[i].team_id;
-          if(teamID === ""){
+          if(teamID == null){
             return crabsInGame = true;
           }
         }
