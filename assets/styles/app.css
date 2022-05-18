@@ -3,7 +3,9 @@
 }
 
 html {
-  font-family: 'Roboto', open-sans;
+    font-family: 'Roboto', open-sans;
+    background-color: black;
+    color: #d3d3d3;
 }
 
 body {
@@ -21,13 +23,13 @@ header {
 
 #results,
 #calculator {
-  margin: 2rem auto;
-  width: 40rem;
-  max-width: 90%;
-  border: 1px solid #023d6d;
-  border-radius: 10px;
-  padding: 1rem;
-  color: #023d6d;
+    margin: 2rem auto;
+    width: 40rem;
+    max-width: 90%;
+    border: 1px solid #023d6d;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
 }
 
 #results {
