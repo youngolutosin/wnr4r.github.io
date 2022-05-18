@@ -6,7 +6,7 @@ let currentResult = defaultResult;
 let mineID = 0;
 let mineScanRange = 5000;
 let reinforcementTime = 0;
-let faction1 = "machine";
+let faction1 = "MACHINE";
 let faction2 = "";
 const baseURL = "https://idle-game-api.crabada.com/public/idle";
 //let url = baseURL+'/mines?user_address=0xaf003b04308c0d748be64a95834a3822f776417e&limit=100&page=1&orderBy=start_time&order=desc';
