@@ -4,9 +4,9 @@ const defaultResult = 0;
 const apiDelay = 200; //ms
 let currentResult = defaultResult;
 let mineID = 0;
-let mineScanRange = 0;
+let mineScanRange = 5000;
 let reinforcementTime = 0;
-let faction1 = "";
+let faction1 = "machine";
 let faction2 = "";
 const baseURL = "https://idle-game-api.crabada.com/public/idle";
 //let url = baseURL+'/mines?user_address=0xaf003b04308c0d748be64a95834a3822f776417e&limit=100&page=1&orderBy=start_time&order=desc';
@@ -26,10 +26,10 @@ function getUserInput() {
 //get input with prompt
 function getInputFromPrompt(){
   mineID = parseInt(prompt("Enter starting mine ID"));
-  mineScanRange = parseInt(prompt("Enter mine scan range"));
+  //mineScanRange = parseInt(prompt("Enter mine scan range"));
   reinforcementTime = parseInt(prompt("Enter reinforcement time"));
-  faction1 = (prompt("Enter desired 1st faction, leave empty if you want all")).toUpperCase();
-  faction2 = (prompt("Enter desired 2nd faction, leave empty if you want all")).toUpperCase();
+  //faction1 = (prompt("Enter desired 1st faction, leave empty if you want all")).toUpperCase();
+  //faction2 = (prompt("Enter desired 2nd faction, leave empty if you want all")).toUpperCase();
 }
 
 
