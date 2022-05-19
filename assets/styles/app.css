@@ -72,7 +72,8 @@ header {
 }
 
 #calc-actions button {
-  width: 4rem;
+    width: 10em;
+    border-radius: 1rem;
 }
 
 #calc-actions {
